@@ -1,6 +1,7 @@
 $(function () {
 
   $(".rateyo").rateYo({
+    readOnly: false,
     rating: 4.5,
   });
 
