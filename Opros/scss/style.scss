@@ -1,0 +1,255 @@
+body {
+  background-image: url(../images/photo_2022-05-19_09-44-14.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+//=======================HEADER========================
+//=======================HEADER========================
+.header {
+  &__top {
+    padding-top: 3%;
+  }
+
+  &__top-inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__top-logo {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    color: white;
+  }
+
+
+  &__btn {
+    padding: 15px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    color: white;
+    background: none;
+    border: 2px solid #19d1ff;
+    border-radius: 70px;
+    &:hover {
+      transition: all 0.3s;
+      background-color: #19d1ff;
+      color: black;
+    }
+  }
+
+  &__body {
+    padding-top: 50px;
+  }
+
+  &__body-title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    color: white;
+  }
+
+
+  &__body-btngirl {
+    margin-top: 65px;
+    margin-bottom: 50px;
+    padding: 30px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+    background-color: orange;
+    border-radius: 70px;
+    box-shadow: -1px 0px 20px 10px rgb(0 0 0 / 36%);
+    border: 2px solid #ffffff;
+    &:hover {
+      transition: all 0.3s;
+      background-color: #ff4500;
+      box-shadow: -1px 0px 20px 10px #ff4500;
+    }
+  }
+
+  &__body-btnboy {
+    padding: 30px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+    background-color: #46cadb;
+    border-radius: 70px;
+    box-shadow: -1px 0px 20px 10px rgb(0 0 0 / 36%);
+    border: 2px solid #ffffff;
+    &:hover {
+      background-color: #0404a5;
+      box-shadow: -1px 0px 20px 10px #0404a5;
+      transition: all 0.3s;
+    }
+  }
+  &__bottom {
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      top: -12px;
+      height: 12px;
+      width: 100%;
+      left: 0;
+      background: url(../images/bg_steps.png) 0 0 repeat-x;
+  }
+  }
+
+  &__bottom-inner {
+    display: flex;
+    justify-content: space-around;
+    
+  }
+
+  &__bottom-item-numb {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    color: #b8b8b8;
+
+  }
+
+  &__bottom-item-icon {
+    position: relative;
+    &::before {
+      position: absolute;
+      top: 50%;
+      right: 115%;
+      left: -115%;
+      border: 1px dashed #ffffff;
+      content: "";
+
+  }
+  }
+
+  &__bottom-item-desc {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    color: #b8b8b8;
+  }
+}
+
+.first {
+  color: #fbf545;
+  &::before {
+    display: none;
+  }
+}
+
+span.blue {
+  color: #64edff;
+}
+span.orange {
+  color: #fbf545;
+}
+
+//============FOOTER==================
+//============FOOTER==================
+.footer {
+  position: relative;
+  background-color:#f0f0f0;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: url(../images/bg_footer.png) 0 0 repeat-x;
+    height: 12px;
+    top: -12px;
+}
+
+  &__inner {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__mail {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  &__email {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    &:hover {
+      text-decoration:  underline;
+      
+    }
+  }
+
+
+  &__item {
+    display: flex;
+    svg {
+      margin-right: 10px;
+    }
+  }
+
+  &__item-info {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    &:hover {
+      text-decoration:  underline;
+      
+    }
+  }
+
+  &__item-faq {
+    margin-left: 20px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    &:hover {
+      text-decoration:  underline;
+      
+    }
+  }
+
+  &__item-contact {
+    margin-left: 20px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    &:hover {
+      text-decoration:  underline;
+      
+    }
+  }
+}

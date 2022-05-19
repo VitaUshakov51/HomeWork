@@ -1,0 +1,164 @@
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+//=======================HEADER========================
+//=======================HEADER========================
+.header {
+  background-image: url(../images/webp.net-compress-image-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -100px;
+
+  &__inner {
+    padding-top: 7%;
+    padding-bottom: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__logo {
+    background-color: rgba(0, 0, 0, 0.57);
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    color: white;
+    padding: 30px;
+    border-radius: 70px;
+  }
+  &__icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -40px;
+    z-index: 10;
+  }
+}
+//============MAIN====================
+//============MAIN====================
+.main {
+  background-image: url(../images/bg_page.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__activites {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 5%;
+  }
+}
+.activites {
+  &__inner {
+    margin-bottom: 50px;
+  }
+
+  &__title {
+    margin-bottom: 50px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 37px;
+    color: white;
+    .orange {
+      color: #c8fa8b;
+    }
+    .blue {
+      color: #64edff;
+    }
+  }
+
+  &__text {
+    margin-bottom: 50px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 37px;
+    color: #fff;
+  }
+}
+
+
+//============FOOTER==================
+//============FOOTER==================
+.footer {
+  position: relative;
+  background-color: #f0f0f0;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: url(../images/bg_footer.png) 0 0 repeat-x;
+    height: 12px;
+    top: -12px;
+  }
+
+  &__inner {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__mail {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  &__email {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__item {
+    display: flex;
+    svg {
+      margin-right: 10px;
+    }
+  }
+
+  &__item-info {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__item-faq {
+    margin-left: 20px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__item-contact {
+    margin-left: 20px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
