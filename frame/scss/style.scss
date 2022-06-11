@@ -590,9 +590,14 @@ button {
 		// .header__body-inner
 
 		&__body-inner {
-            display: block;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 		}
 
+        &__body-content {
+            margin-right: 0px;
+        }
 
         &__body-png {
             width: 100%;
