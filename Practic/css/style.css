@@ -47,11 +47,10 @@ button {
   text-align: center;
 }
 
-/* button:hover {
-  width: 210px;
-  height: 70px;
-  transition: all .2s;
-} */
+button:hover {
+  transform: scale(1.15);
+  transition: all .3s;
+}
 
 /* -------------HEADER TOP-------------------------- */
 /* -------------HEADER TOP-------------------------- */
@@ -89,7 +88,14 @@ button {
   font-weight: 600;
   line-height: 28px;
   color: Black;
+  
 }
+
+.header__nav-link:hover {
+  transition: all .3s;
+  color: #FF6433;
+}
+
 
 .header__assist::before {
   content: "";
@@ -294,14 +300,14 @@ button {
 }
 
 .grid__item:hover {
-  transition: all 1s;
+  transition: all .3s;
   background-color: #FF6433;
   color: #fff;
 }
 
 
 .grid__item:hover path {
-  transition: all 1s;
+  transition: all .3s;
   fill: #fff;
 }
 
@@ -310,6 +316,7 @@ button {
   font-size: 24px;
   text-align: center;
   margin-bottom: 62px;
+  
 }
 
 .grid__item-img {
@@ -328,6 +335,11 @@ button {
 .ofter__arrow-link {
   display: flex;
   justify-content: end;
+}
+
+.ofter__arrow-link:hover {
+  transform: scale(1.01);
+  transition: all .3s;
 }
 
 .ofter__arrow-image {
@@ -587,6 +599,8 @@ button {
 
 .brands__logo-row:hover {
   filter: grayscale(0);
+  transform: scale(1.15);
+  transition: all .3s;
 }
 
 /* =======BLOG=========== */
@@ -630,7 +644,6 @@ button {
 
 .blog__wrapper:hover {
   background-color: #FF6433;
-  border-radius: 3%;
   transition: all .3s;
   color: #fff;
 }
@@ -908,6 +921,14 @@ button {
 
 }
 
+.questions__acc-btn:hover {
+  transform: scale(1.15);
+  transition: all .3s;
+
+}
+
+
+
 .questions__acc-btn::before,
 .questions__acc-btn::after {
   content: "";
@@ -973,9 +994,9 @@ button {
 }
 
 .get__content-input:hover {
-  border: 3px solid #FF6433;
-  border-radius: 2px;
-  transition: all .2s;
+  transform: scale(1.05);
+  transition: all .3s;
+
 }
 
 .get__content-input:last-child {

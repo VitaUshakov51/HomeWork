@@ -1,3 +1,5 @@
+AOS.init();
+
 $(function () {
 
   $(".rateyo").rateYo({
