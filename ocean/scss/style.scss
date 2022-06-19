@@ -31,6 +31,14 @@ button {
   &:hover {
     transition: all 0.3s;
     box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
+    transform: scale(1.15);
+  }
+}
+
+a {
+  &:hover{
+    transform: scale(1.15);
+    transition: all .3s;
   }
 }
 
@@ -444,6 +452,10 @@ button {
 
   &__body-item {
     display: inline-block;
+    &:hover{
+      transform: scale(1.05);
+      transition: all .3s;
+    }
   }
 
   &__body-block {
@@ -650,6 +662,7 @@ button {
       background: linear-gradient(92.23deg, #ff56f6 21.43%, #b936ee 50.63%, #3bace2 100%, #406aff 117.04%);
       color: #fff;
       transition: all 0.3s;
+      transform: scale(1.15);
     }
   }
 
@@ -732,6 +745,10 @@ button {
     backdrop-filter: blur(79.2003px);
     background-repeat: no-repeat;
     margin-right: 20px;
+    &:hover{
+      transform: scale(1.05);
+      transition: all .3s;
+    }
   }
 
   &__content-user {

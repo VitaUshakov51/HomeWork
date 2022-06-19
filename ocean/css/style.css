@@ -30,6 +30,15 @@ button:hover {
   transition: all 0.3s;
   -webkit-box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
           box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+a:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .header__logo-mobile {
@@ -75,7 +84,7 @@ button:hover {
   font-weight: 700;
   font-size: 19px;
   line-height: 25px;
-  color: #ffffff99;
+  color: rgba(255, 255, 255, 0.6);
 }
 .header__nav-link:hover {
   -webkit-transition: 0.3s;
@@ -125,8 +134,8 @@ button:hover {
 .header__btn-shadow:hover {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  -webkit-filter: drop-shadow(0px 0px 30px #ff56f682);
-          filter: drop-shadow(0px 0px 30px #ff56f682);
+  -webkit-filter: drop-shadow(0px 0px 30px rgba(255, 86, 246, 0.5098039216));
+          filter: drop-shadow(0px 0px 30px rgba(255, 86, 246, 0.5098039216));
 }
 .header__btn {
   border-radius: 3px;
@@ -169,8 +178,8 @@ button:hover {
   text-align: center;
 }
 .header__body-imagebox {
-  -webkit-box-shadow: 11px 14px 9px 5px #0000004a;
-  box-shadow: 11px 14px 9px 5px #0000004a;
+  -webkit-box-shadow: 11px 14px 9px 5px rgba(0, 0, 0, 0.2901960784);
+  box-shadow: 11px 14px 9px 5px rgba(0, 0, 0, 0.2901960784);
   margin-bottom: 42px;
 }
 .header__body-imagebox img {
@@ -192,8 +201,8 @@ button:hover {
 .header__body-item:nth-child(2) {
   padding-left: 40px;
   padding-right: 20px;
-  border-left: 1px solid #ffffff42;
-  border-right: 1px solid #ffffff42;
+  border-left: 1px solid rgba(255, 255, 255, 0.2588235294);
+  border-right: 1px solid rgba(255, 255, 255, 0.2588235294);
 }
 .header__body-item:last-child {
   padding-left: 45px;
@@ -218,7 +227,7 @@ button:hover {
   border-radius: 8px;
   -webkit-clip-path: polygon(0% 100%, 0 25%, 20% 0, 100% 0%, 100% 100%);
   clip-path: polygon(0% 100%, 0 25%, 20% 0, 100% 0%, 100% 100%);
-  border: 2px solid #ffffff2c;
+  border: 2px solid rgba(255, 255, 255, 0.1725490196);
   position: absolute;
   bottom: -35px;
   right: 10px;
@@ -460,6 +469,12 @@ button:hover {
 .topnow__body-item {
   display: inline-block;
 }
+.topnow__body-item:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
 .topnow__body-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -472,7 +487,7 @@ button:hover {
           backdrop-filter: blur(79px);
   padding-top: 35px;
   padding-bottom: 25px;
-  border: 3px solid #ffffff2c;
+  border: 3px solid rgba(255, 255, 255, 0.1725490196);
 }
 .topnow__body-title {
   font-family: "Rajdhani";
@@ -704,7 +719,7 @@ button:hover {
 }
 .explore__grid-link {
   padding: 30px 30px;
-  border: 3px solid #ffffff80;
+  border: 3px solid rgba(255, 255, 255, 0.5019607843);
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -714,7 +729,7 @@ button:hover {
   font-weight: 700;
   font-size: 26.531px;
   line-height: 33px;
-  color: #ffffff80;
+  color: rgba(255, 255, 255, 0.5019607843);
 }
 .explore__grid-link:hover {
   -webkit-box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
@@ -723,6 +738,8 @@ button:hover {
   color: #fff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 .explore__content-arrow {
   margin-top: 43px;
@@ -794,7 +811,7 @@ button:hover {
 }
 .collection__content-item {
   max-width: 440px;
-  border: 2px solid #ffffff2c;
+  border: 2px solid rgba(255, 255, 255, 0.1725490196);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -812,6 +829,12 @@ button:hover {
           backdrop-filter: blur(79.2003px);
   background-repeat: no-repeat;
   margin-right: 20px;
+}
+.collection__content-item:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .collection__content-user {
   margin-bottom: 25px;
@@ -980,7 +1003,7 @@ button:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border: 4px solid #ffffff2c;
+  border: 4px solid rgba(255, 255, 255, 0.1725490196);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1025,7 +1048,7 @@ button:hover {
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
-  color: #ffffffcc;
+  color: rgba(255, 255, 255, 0.8);
 }
 .sellers__desc-icon {
   display: -webkit-box;
@@ -1038,7 +1061,7 @@ button:hover {
 .sellers__user-procent {
   margin-left: 50px;
   border: 1px solid #00ff66;
-  background-color: #00b34726;
+  background-color: rgba(0, 179, 71, 0.1490196078);
   border-radius: 17px;
   font-family: "Roboto";
   font-style: normal;
@@ -1050,8 +1073,8 @@ button:hover {
 .sellers__user-procent-red {
   margin-left: 50px;
   border: 1px solid #ff0000;
-  background: -webkit-gradient(linear, left top, left bottom, from(#eb141426), to(#eb14141a));
-  background: linear-gradient(180deg, #eb141426 0%, #eb14141a 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(235, 20, 20, 0.1490196078)), to(rgba(235, 20, 20, 0.1019607843)));
+  background: linear-gradient(180deg, rgba(235, 20, 20, 0.1490196078) 0%, rgba(235, 20, 20, 0.1019607843) 100%);
   border-radius: 17px;
   font-family: "Roboto";
   font-style: normal;
@@ -1107,11 +1130,11 @@ button:hover {
 .ntf__info {
   margin-top: 216px;
   margin-bottom: -130px;
-  border: 4px solid #ffffff2c;
+  border: 4px solid rgba(255, 255, 255, 0.1725490196);
   border-radius: 3px;
   padding: 50px 70px;
   display: block;
-  background-color: #ffffff1a;
+  background-color: rgba(255, 255, 255, 0.1019607843);
   -webkit-backdrop-filter: blur(145.603px);
           backdrop-filter: blur(145.603px);
 }
@@ -1235,8 +1258,8 @@ button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-top: 1px solid #ffffff71;
-  border-bottom: 1px solid #ffffff71;
+  border-top: 1px solid rgba(255, 255, 255, 0.4431372549);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4431372549);
   padding-top: 95px;
   padding-bottom: 86px;
 }
@@ -1393,7 +1416,7 @@ button:hover {
   font-size: 19px;
   line-height: 31px;
   color: #fff;
-  border-bottom: 2px solid #ffffff28;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1568627451);
   margin-top: 17px;
   margin-bottom: 17px;
 }
@@ -1493,8 +1516,8 @@ button:hover {
   .topnow__btn-shadow:hover {
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
-    -webkit-filter: drop-shadow(0px 0px 30px #ff56f682);
-            filter: drop-shadow(0px 0px 30px #ff56f682);
+    -webkit-filter: drop-shadow(0px 0px 30px rgba(255, 86, 246, 0.5098039216));
+            filter: drop-shadow(0px 0px 30px rgba(255, 86, 246, 0.5098039216));
   }
   .topnow__btn {
     border-radius: 4px;
