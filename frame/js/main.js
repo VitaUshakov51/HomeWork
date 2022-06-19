@@ -1,3 +1,8 @@
+
+AOS.init(
+  
+);
+
 $(function () {
 
     $('.feature').slick({
