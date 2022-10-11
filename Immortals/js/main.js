@@ -1,6 +1,3 @@
-AOS.init();
-
-
 
 $(function () {
 
