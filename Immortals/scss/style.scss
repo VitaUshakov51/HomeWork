@@ -15,6 +15,10 @@ body {
     margin: 0 auto;
 }
 
+.container__slider {
+    max-width: 1200px;
+}
+
 .overlay {
     position: fixed;
     top: 0%;
@@ -79,6 +83,7 @@ body {
 // ==== header ==== 
 
 .header {
+    z-index: 100;
 
 
     // .header__nav
@@ -93,6 +98,7 @@ body {
         border-bottom: 4px solid #BF9F31;
         border-radius: 0px 0px 0px 20px;
         transition: all .3s;
+        z-index: 100;
 
         @media (max-width: 850px) {
             // display: none;
@@ -189,7 +195,7 @@ body {
     background-size: cover;
     background-position: 50% 50%;
     padding-bottom: 50px;
-    
+
 
 
     // .hero__logo
@@ -345,7 +351,7 @@ body {
     z-index: 20;
     position: fixed;
     bottom: 0%;
-    left: 25%;
+    left: 30%;
     display: flex;
     background-color: #163953;
     border-top: 4px solid #BF9F31;
@@ -409,7 +415,7 @@ body {
 
 .gameplay {
     padding-top: 50px;
-    padding-bottom: 50px;              
+    padding-bottom: 50px;
     background-image: url(../img/twobg.webp);
     background-repeat: no-repeat;
     background-size: cover;
@@ -419,9 +425,7 @@ body {
         margin-top: -160px;
     }
 
-    &__inner {
-        
-    }
+    &__inner {}
 
     // .gameplay__title
 
@@ -431,8 +435,9 @@ body {
         line-height: 85px;
         text-align: center;
         color: #DFFFFF;
-        @media (max-width: 425px){
-              font-size: 35px;
+
+        @media (max-width: 425px) {
+            font-size: 35px;
         }
     }
 
@@ -441,8 +446,178 @@ body {
     &__img {
         max-width: 1234px;
         max-height: 854px;
+
         img {
             width: 100%;
         }
     }
+}
+
+
+// ==== nft ====
+
+.nft {
+
+    padding-top: 50px;
+    padding-bottom: 250px;
+    background-image: url(../img/threebg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+
+
+    //nft__element
+
+    &__element {
+        margin-top: -165px;
+    }
+
+    //nft__inner 
+
+    &__inner {
+        position: relative;
+    }
+
+
+    // .nft__title
+
+
+    &__title {
+        text-align: center;
+        font-weight: 700;
+        font-size: 70px;
+        color: #DFFFFF;
+    }
+
+    // .nft__slider
+
+    &__slider {
+        max-width: 1200px;
+    }
+
+    // .nft__slider-item
+
+    &__slider-item {
+        border: 4px solid #2867D5;
+        border-radius: 2px;
+        padding: 30px;
+        margin: 20px;
+    }
+
+    // .nft__slider-image
+
+    &__slider-image {
+        max-width: 350px;
+        max-height: 370px;
+
+        @media (max-width: 710px){
+              max-width: 100%;
+              max-height: 100%;
+        }
+        img {
+            width: 100%;
+        }
+    }
+
+    // .nft__slider-desc
+
+    &__slider-desc {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    // .nft__slider-name
+
+    &__slider-name {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+
+    }
+
+    // .nft__slider-wallet
+
+    &__slider-wallet {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+
+    // .nft__arrow
+
+    &__arrow {}
+
+    // .nft__arrow-left
+
+    &__arrow-left {
+        position: absolute;
+        top: 50%;
+        left: -5%;
+        cursor: pointer;
+        transition: all .3s;
+        &:hover {
+            transform: scale(1.15);
+        }
+    }
+
+    // .nft__arrow-right
+
+    &__arrow-right {
+        position: absolute;
+        top: 50%;
+        right: -5%;
+        cursor: pointer;
+        transition: all .3s;
+        &:hover {
+            transform: scale(1.15);
+        }
+    }
+
+    // .nft__dots
+
+    &__dots {}
+}
+
+.nft__dots .slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nft__dots li {
+    margin: 10px;
+    border-radius: 50%
+}
+
+.nft__dots .slick-active {
+    width: 15px;
+    height: 15px;
+    background-color: #77FBF9;
+    border-radius: 50%;
+}
+
+.nft__dots button {
+    font-size: 0;
+    background-color: transparent;
+    width: 11px;
+    height: 11px;
+    display: flex;
+    align-items: center;
+}
+
+.nft__dots button:hover {
+    transform: scale(1.12);
+    background-color: #77FBF9;
+    border-radius: 50%;
+}
+
+.nft__dots button::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    background-color: rgba(119, 251, 249, 0.6);
+    border-radius: 50%;
 }
