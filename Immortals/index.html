@@ -10,6 +10,7 @@
         href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
         rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <title>The Immortals</title>
@@ -70,18 +71,18 @@
         <main class="main">
             <section class="hero">
                 <div class="container">
-                    <a href="/">
-                        <div class="hero__logo">
+                    <a href="#">
+                        <div data-aos="fade-down-right" data-aos="fade-down" data-aos-duration="2000" class="hero__logo">
                             <img src="img/logo.png" alt="">
                         </div>
                     </a>
                     <div class="hero__inner">
                         <div class="hero__btnbox">
-                            <div class="hero__btnbox-download">DOWNLOAD
+                            <div data-aos="fade-down" data-aos-duration="2000" class="hero__btnbox-download">DOWNLOAD
                                 <br>
                                 NOW</div>
                             <a href="#">
-                                <div class="hero__btnbox-apple">
+                                <div data-aos="flip-up" data-aos-duration="2000" class="hero__btnbox-apple">
                                     <div class="hero__btnbox-apple-icon">
                                         <img src="img/apple.svg" alt="">
                                     </div>
@@ -89,7 +90,7 @@
                                 </div>
                             </a>
                             <a href="#">
-                                <div class="hero__btnbox-android">
+                                <div data-aos="flip-up" data-aos-duration="2000" class="hero__btnbox-android">
                                     <div class="hero__btnbox-androin-icon">
                                         <img src="img/android.svg" alt="">
                                     </div>
@@ -97,7 +98,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="hero__img">
+                        <div data-aos="zoom-in"  data-aos-duration="1000" class="hero__img">
                             <img src="img/krol.png" alt="">
                         </div>
                     </div>
@@ -112,7 +113,7 @@
                         <div class="gameplay__title">
                             GamePlay
                         </div>
-                        <div class="gameplay__img">
+                        <div data-aos="zoom-in"  data-aos-duration="1000" class="gameplay__img">
                             <img src="img/gameplay.png" alt="">
                         </div>
                     </div>
@@ -459,7 +460,11 @@
 
     <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        AOS.init();
+      </script>
 
 </body>
 
