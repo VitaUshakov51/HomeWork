@@ -106,6 +106,9 @@ body {
             height: 100%;
             z-index: 50;
             transform: translateX(100%);
+            border-bottom: none;
+            border-radius: 20px 0px 0px 20px;
+            border-left: 4px solid #BF9F31;
         }
 
         @media (max-width: 400px) {
@@ -348,7 +351,7 @@ body {
 // ==== socials ====
 
 .socials {
-    z-index: 20;
+    z-index: 5;
     position: fixed;
     bottom: 0%;
     left: 30%;
@@ -357,6 +360,15 @@ body {
     border-top: 4px solid #BF9F31;
     border-radius: 20px 20px 0px 0px;
     padding: 10px 100px;
+    @media (max-width: 1100px){
+          left: 25%;
+    }
+    @media (max-width: 950px){
+          left: 23%;
+    }
+    @media (max-width: 950px){
+          left: 18%;
+    }
 
     @media (max-width: 850px) {
         left: 0%;
@@ -828,7 +840,7 @@ body {
 
 .roadmap {
     padding-top: 50px;
-    padding-bottom: 250px;
+    padding-bottom: 50px;
     background-image: url(../img/fivebg.webp);
     background-repeat: no-repeat;
     background-size: cover;
@@ -843,8 +855,9 @@ body {
         font-size: 24px;
         line-height: 29px;
         color: #FFFFFF;
-        @media (max-width: 550px){
-              font-size: 19px;
+
+        @media (max-width: 550px) {
+            font-size: 19px;
         }
     }
 
@@ -853,9 +866,10 @@ body {
         font-size: 18px;
         line-height: 22px;
         color: #FFFFFF;
-        @media (max-width: 550px){
+
+        @media (max-width: 550px) {
             font-size: 14px;
-      }
+        }
     }
 
     // .roadmap__title
@@ -867,8 +881,9 @@ body {
         line-height: 85px;
         color: #DFFFFF;
         margin-bottom: 40px;
-        @media (max-width: 390px){
-              font-size: 50px;
+
+        @media (max-width: 390px) {
+            font-size: 50px;
         }
     }
 
@@ -877,9 +892,10 @@ body {
     &__inner {
         display: flex;
         align-items: center;
-        @media (max-width: 787px){
-              flex-direction: column;
-              justify-content: center;
+
+        @media (max-width: 787px) {
+            flex-direction: column;
+            justify-content: center;
         }
     }
 
@@ -893,8 +909,9 @@ body {
         display: flex;
         align-items: center;
         margin-bottom: 50px;
-        @media (max-width: 768px){
-              justify-content: start;
+
+        @media (max-width: 768px) {
+            justify-content: start;
         }
     }
 
@@ -902,6 +919,7 @@ body {
 
     &__img {
         margin-right: 20px;
+
         img {
             width: 100%;
         }
@@ -909,9 +927,10 @@ body {
 
     &__img--yellow {
         margin: -100px;
-        @media (max-width: 787px){
-        margin: -100px -100px -100px -130px;
-      }
+
+        @media (max-width: 787px) {
+            margin: -100px -100px -100px -130px;
+        }
     }
 
     // .roadmap__text
@@ -925,40 +944,172 @@ body {
 
 .roadmap__item--four {
     margin-left: 120px;
-    @media (max-width: 1100px){
-          margin-left: 100px;
+
+    @media (max-width: 1100px) {
+        margin-left: 100px;
     }
-    @media (max-width: 950px){
-          margin-left: 0px;
+
+    @media (max-width: 950px) {
+        margin-left: 0px;
     }
 }
 
 .roadmap__item--one {
     margin-left: 240px;
-    @media (max-width: 1100px){
-          margin-left: 200px;
+
+    @media (max-width: 1100px) {
+        margin-left: 200px;
     }
-    @media (max-width: 950px){
+
+    @media (max-width: 950px) {
         margin-left: 0px;
-  }
+    }
 }
 
-.roadmap__item--two { 
+.roadmap__item--two {
     margin-left: 120px;
-    @media (max-width: 1100px){
+
+    @media (max-width: 1100px) {
         margin-left: 100px;
     }
-    @media (max-width: 950px){
+
+    @media (max-width: 950px) {
         margin-left: 0px;
-  }
+    }
 }
 
 .roadmap__item--last {
     margin-left: 240px;
-    @media (max-width: 1100px){
+
+    @media (max-width: 1100px) {
         margin-left: 200px;
     }
-    @media (max-width: 950px){
+
+    @media (max-width: 950px) {
         margin-left: 0px;
-  }
+    }
+}
+
+
+// ==== footer ==== 
+
+.footer {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-image: url(../img/footer.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+
+    &__element {
+        margin-top: -150px;
+    }
+
+    // .footer__inner
+
+    &__inner {
+        border-top: 1px solid #BDBDBD ;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media (max-width: 1100px){
+              flex-direction: column;
+            
+        }
+    }
+
+    // .footer__logo
+
+    &__logo {
+        max-width: 198px;
+        max-height: 126px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    // .footer__nav
+
+    &__nav {
+        @media (max-width: 1100px){
+            margin-top: 20px;
+            margin-bottom: 20px;   
+      }
+    }
+
+    // .footer__nav-list
+
+    &__nav-list {
+        display: flex;
+        column-gap: 50px;
+        @media (max-width: 786px){
+              flex-direction: column;
+        }
+    }
+
+    // .footer__nav-item
+
+    &__nav-item {
+        @media (max-width: 786px){
+            padding: 20px;
+      }
+    }
+
+    // .footer__nav-link
+
+    &__nav-link {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #FFFFFF;
+        transition: all .3s;
+
+        &:hover {
+            text-shadow: 3px 3px 9px #FFFFFF;
+            transform: scale(1.15);
+        }
+
+        @media (max-width: 786px){
+            padding: 20px;
+      }
+    }
+
+    // .footer__socials
+
+    &__socials {
+        display: flex;
+        column-gap: 20px;
+
+    }
+
+    // .footer__socials-twitter
+
+    &__socials-twitter {
+        transition: all .3s;
+
+        &:hover {
+            transform: scale(1.15);
+        }
+    }
+
+    // .footer__socials-discord
+
+    &__socials-discord {
+        transition: all .3s;
+
+        &:hover {
+            transform: scale(1.15);
+        }
+    }
+
+    // .footer__socials-telegram
+
+    &__socials-telegram {
+        transition: all .3s;
+
+        &:hover {
+            transform: scale(1.15);
+        }
+    }
 }
