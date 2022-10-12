@@ -3,7 +3,7 @@ $(function () {
 
 
 
-$('.burger').on('click' , function(e) {
+$('.burger, .overlay').on('click' , function(e) {
   e.preventDefault()
   $('.header__nav').toggleClass('header__nav--open')
   $('.overlay').toggleClass('overlay--show')
@@ -81,5 +81,14 @@ $('.team__arrow-right').on('click', function (e) {
   e.preventDefault()
   $('.team__slider').slick('slickNext')
 })
+
+$(".header__nav-list a, .footer__nav-list a").on("click", function (e) {
+  e.preventDefault()
+  var id = $(this).attr('href'),
+    top = $(id).offset().top
+  $('body,html').animate({ scrollTop: top }, 800)
+})
+
+
 
     });
