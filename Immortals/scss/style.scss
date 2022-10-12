@@ -459,7 +459,7 @@ body {
 .nft {
 
     padding-top: 50px;
-    padding-bottom: 250px;
+    padding-bottom: 50px;
     background-image: url(../img/threebg.webp);
     background-repeat: no-repeat;
     background-size: cover;
@@ -510,10 +510,11 @@ body {
         max-width: 350px;
         max-height: 370px;
 
-        @media (max-width: 710px){
-              max-width: 100%;
-              max-height: 100%;
+        @media (max-width: 710px) {
+            max-width: 100%;
+            max-height: 100%;
         }
+
         img {
             width: 100%;
         }
@@ -558,6 +559,7 @@ body {
         left: -5%;
         cursor: pointer;
         transition: all .3s;
+
         &:hover {
             transform: scale(1.15);
         }
@@ -571,6 +573,7 @@ body {
         right: -5%;
         cursor: pointer;
         transition: all .3s;
+
         &:hover {
             transform: scale(1.15);
         }
@@ -615,6 +618,203 @@ body {
 }
 
 .nft__dots button::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    background-color: rgba(119, 251, 249, 0.6);
+    border-radius: 50%;
+}
+
+
+// ==== team ====
+
+.team {
+    padding-top: 50px;
+    padding-bottom: 250px;
+    background-image: url(../img/fourbg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+
+    // .team__element
+
+    &__element {
+        margin-top: -155px;
+    }
+
+    // .team__inner
+
+    &__inner {
+        position: relative;
+    }
+
+    // .team__title
+
+    &__title {
+        text-align: center;
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 85px;
+        color: #DFFFFF;
+    }
+
+    // .team__slider
+
+    &__slider {}
+
+    // .team__slider-item
+
+    &__slider-item {
+        padding: 30px 20px 10px 20px;
+        border: 4px solid #2867D5;
+        border-radius: 3px;
+        margin: 20px;
+        text-align: center;
+    }
+
+    // .team__slider-img
+
+    &__slider-img {
+        max-width: 373px;
+        max-height: 407px;
+        margin-bottom: 20px;
+        @media (max-width: 710px) {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    // .team__slider-name
+
+    &__slider-name {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+        margin-bottom: 5px;
+    }
+
+    // .team__slider-profi
+
+    &__slider-profi {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 10px;
+    }
+
+    // .team__slider-desc
+
+    &__slider-desc {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+    }
+
+    // .team__slider-socials
+
+    &__slider-socials {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 20px;
+    }
+
+    // .team__slider-socials-twitter
+
+    &__slider-socials-twitter {
+        margin-top: 3px;
+        display: flex;
+        align-items: center;
+    }
+
+    // .team__slider-socials-in
+
+    &__slider-socials-in {
+        display: flex;
+        align-items: center;
+    }
+
+    // .team__arrow
+
+    &__arrow {}
+
+    // .team__arrow-left
+
+    &__arrow-left {
+        position: absolute;
+        top: 50%;
+        left: -5%;
+        cursor: pointer;
+        transition: all .3s;
+
+        &:hover {
+            transform: scale(1.15);
+        }
+    }
+
+    // .team__arrow-right
+
+    &__arrow-right {
+        position: absolute;
+        top: 50%;
+        right: -5%;
+        cursor: pointer;
+        transition: all .3s;
+
+        &:hover {
+            transform: scale(1.15);
+        }
+    }
+
+    // .team__dots
+
+    &__dots {}
+}
+
+.team__dots .slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team__dots li {
+    margin: 10px;
+    border-radius: 50%
+}
+
+.team__dots .slick-active {
+    width: 15px;
+    height: 15px;
+    background-color: #77FBF9;
+    border-radius: 50%;
+}
+
+.team__dots button {
+    font-size: 0;
+    background-color: transparent;
+    width: 11px;
+    height: 11px;
+    display: flex;
+    align-items: center;
+}
+
+.team__dots button:hover {
+    transform: scale(1.12);
+    background-color: #77FBF9;
+    border-radius: 50%;
+}
+
+.team__dots button::before {
     content: "";
     width: 11px;
     height: 11px;

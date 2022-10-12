@@ -45,4 +45,41 @@ $('.nft__arrow-right').on('click', function (e) {
   $('.nft__slider').slick('slickNext')
 })
 
+
+
+$('.team__slider').slick({
+  arrows: false,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  dots: true,
+  appendDots: $('.team__dots'),
+  responsive: [
+    {
+      breakpoint: 850,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 710,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    },
+  ]
+});
+
+$('.team__arrow-left').on('click', function (e) {
+  e.preventDefault()
+  $('.team__slider').slick('slickPrev')
+})
+$('.team__arrow-right').on('click', function (e) {
+  e.preventDefault()
+  $('.team__slider').slick('slickNext')
+})
+
     });
