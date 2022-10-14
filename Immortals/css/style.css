@@ -3,6 +3,8 @@ body {
     font-style: normal
 }
 
+
+
 .wrapper {
     width: 100%;
     min-height: 100%;
@@ -20,11 +22,12 @@ body {
     -webkit-background-attachment: fixed;
 }
 
-@media (max-width: 850px){
-      .wrapper {
-        background-size: auto;
-      }
-}
+@supports (-webkit-touch-callout: none) {
+    .wrapper {
+      background-attachment: scroll;
+    }
+  }
+
 
 
 
