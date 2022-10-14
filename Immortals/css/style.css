@@ -22,11 +22,7 @@ body {
     -webkit-background-attachment: fixed;
 }
 
-@media (max-width: 850px){
-      .wrapper {
-        image-rendering: crisp-edges;
-      }
-}
+
 
 .container {
     max-width: 1300px;
