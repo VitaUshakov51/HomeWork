@@ -22,12 +22,11 @@ body {
     -webkit-background-attachment: fixed;
 }
 
-@supports (-webkit-touch-callout: none) {
+@media (max-width: 850px){
     .wrapper {
-      background-attachment: scroll;
-    }
-  }
-
+        background-attachment: scroll;
+      }
+}
 
 
 
