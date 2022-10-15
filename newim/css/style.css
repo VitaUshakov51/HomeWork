@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-style: normal;
   background-color: #101821;
   width: 100%;
@@ -28,25 +28,26 @@ body {
   max-width: 1200px;
 }
 
-.overlay {
-  position: fixed;
-  top: 0%;
-  right: 0%;
-  left: 0%;
-  bottom: 0%;
-  background-color: rgba(0, 0, 0, 0.7215686275);
-  z-index: 10;
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
+@media (max-width: 850px) {
+  .overlay {
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+    bottom: 0%;
+    background-color: rgba(0, 0, 0, 0.7215686275);
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
 
-.overlay--show {
-  visibility: visible;
-  opacity: 1;
+  .overlay--show {
+    visibility: visible;
+    opacity: 1;
+  }
 }
-
 .burger {
   display: none;
 }
@@ -164,7 +165,7 @@ img {
 }
 .header__nav-link {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 24px;
   color: #FFFFFF;
   padding: 10px;
@@ -196,11 +197,12 @@ img {
 
 .hero {
   padding-bottom: 50px;
+  margin-bottom: 100px;
 }
 .hero__bg {
   position: absolute;
-  top: -1%;
-  left: -40%;
+  top: 0%;
+  left: -33%;
   width: 140%;
   height: 130%;
   background-image: url(../img/herobg.png);
@@ -230,16 +232,23 @@ img {
 }
 @media (max-width: 700px) {
   .hero__bg {
-    left: -81%;
+    left: -67%;
     width: 239%;
-    height: 104%;
+    height: 135%;
   }
 }
 @media (max-width: 600px) {
   .hero__bg {
-    left: -105%;
-    width: 281%;
-    height: 110%;
+    left: -91%;
+    width: 259%;
+    height: 151%;
+  }
+}
+@media (max-width: 500px) {
+  .hero__bg {
+    left: -119%;
+    width: 326%;
+    height: 145%;
   }
 }
 .hero__logo {
@@ -371,8 +380,8 @@ img {
   }
 }
 .hero__img {
-  max-width: 407px;
-  max-height: 823px;
+  max-width: 220px;
+  max-height: 490px;
 }
 .hero__img img {
   width: 100%;
@@ -389,7 +398,7 @@ img {
   background-color: #163953;
   border-top: 4px solid #BF9F31;
   border-radius: 20px 20px 0px 0px;
-  padding: 10px 50px;
+  padding: 0px 50px;
 }
 @media (max-width: 2000px) {
   .socials {

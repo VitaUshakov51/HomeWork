@@ -3,7 +3,7 @@ $(function () {
 
 
 
-$('.burger, .overlay').on('click' , function(e) {
+$('.burger, .overlay, .header__nav a').on('click' , function(e) {
   e.preventDefault()
   $('.header__nav').toggleClass('header__nav--open')
   $('.overlay').toggleClass('overlay--show')
