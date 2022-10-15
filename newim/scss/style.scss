@@ -131,6 +131,7 @@ img {
 
         @media (max-width: 400px) {
             width: 100%;
+
         }
     }
 
@@ -186,6 +187,9 @@ img {
 
         @media (max-width: 850px) {
             padding: 20px;
+        }
+        @media (max-width: 400px){
+              font-size: 26px;
         }
     }
 
