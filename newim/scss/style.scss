@@ -215,10 +215,10 @@ img {
 
     &__bg {
         position: absolute;
-        top: 0%;
-        left: -33%;
-        width: 140%;
-        height: 130%;
+        top: 3%;
+        left: -26%;
+        width: 208%;
+        height: 141%;
         background-image: url(../img/herobg.png);
         background-repeat: no-repeat;
         background-size: contain;
@@ -490,14 +490,15 @@ img {
 
 
 .gameplay {
+    margin-top: 150px;
 
     // .gameplay__bg
 
     &__bg {
         position: absolute;
         right: -18%;
-        bottom: -85%;
-        width: 140%;
+        bottom: -100%;
+        width: 100%;
         height: 130%;
         background-image: url(../img/gameplaybg.png);
         background-repeat: no-repeat;
@@ -873,8 +874,8 @@ img {
 
     &__bg {
         position: absolute;
-        right: -13%;
-        bottom: -17%;
+        right: -4%;
+        bottom: 20%;
         width: 120%;
         height: 110%;
         background-image: url(../img/teambg.png);
@@ -1106,7 +1107,7 @@ img {
     &__bg {
         position: absolute;
         right: -32%;
-        bottom: -22%;
+        bottom: -13%;
         width: 140%;
         height: 115%;
         background-image: url(../img/roadmap.png);
