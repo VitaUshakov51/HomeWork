@@ -1235,6 +1235,7 @@ img {
 
         @media (max-width: 786px) {
             flex-direction: column;
+            text-align: center;
         }
     }
 
@@ -1270,7 +1271,9 @@ img {
     &__socials {
         display: flex;
         column-gap: 20px;
-
+        @media (max-width: 1100px){
+              display: none;
+        }
     }
 
     // .footer__socials-twitter
