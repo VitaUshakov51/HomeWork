@@ -782,10 +782,9 @@ img {
 }
 
 .nft__play-dots .slick-active {
-    width: 15px;
-    height: 15px;
-    background: linear-gradient(137.29deg, #C87506 13.78%, #F2D54A 83.33%);
     border-radius: 50%;
+    background-color: #F6E051;
+    transform: scale(1.30);
 }
 
 .nft__play-dots button {
@@ -798,16 +797,16 @@ img {
 }
 
 .nft__play-dots button:hover {
-    transform: scale(1.12);
-    background-color: #77FBF9;
     border-radius: 50%;
+    background-color: #F6E051;
+    transform: scale(1.30);
 }
 
 .nft__play-dots button::before {
     content: "";
     width: 11px;
     height: 11px;
-    background-color: #00000099;
+    background-image: url(../img/dotsnone.png);
     border-radius: 50%;
     border: 1px solid white;
 }
@@ -827,7 +826,10 @@ img {
     // .nft__play-prev
 
     &__play-prev {
-        margin-top: 8px;
+        transition: all .3s;
+        &:hover {
+            transform: scale(1.20);
+        }
         @media (max-width: 360px){
             display: none;
       }
@@ -836,10 +838,7 @@ img {
     // .nft__arrow-left
 
     &__arrow-left {
-        margin-top: 8px;
-        @media (max-width: 360px){
-            display: none;
-      }
+
     }
 
     // .nft__play-dots
@@ -850,6 +849,13 @@ img {
     // .nft__play-next
 
     &__play-next {
+        transition: all .3s;
+        &:hover {
+            transform: scale(1.20);
+        }
+        @media (max-width: 360px){
+            display: none;
+      }
     }
 }
 
@@ -1015,10 +1021,9 @@ img {
 }
 
 .team__play-dots .slick-active {
-    width: 15px;
-    height: 15px;
-    background: linear-gradient(137.29deg, #C87506 13.78%, #F2D54A 83.33%);
     border-radius: 50%;
+    background-color: #F6E051;
+    transform: scale(1.30);
 }
 
 .team__play-dots button {
@@ -1031,8 +1036,8 @@ img {
 }
 
 .team__play-dots button:hover {
-    transform: scale(1.12);
-    background-color: #77FBF9;
+    transform: scale(1.30);
+    background-color: #F6E051;
     border-radius: 50%;
 }
 
@@ -1040,7 +1045,7 @@ img {
     content: "";
     width: 11px;
     height: 11px;
-    background-color: #00000099;
+    background-image: url(../img/dotsnone.png);
     border-radius: 50%;
     border: 1px solid white;
 }
@@ -1059,20 +1064,19 @@ img {
     // .team__play-prev
 
     &__play-prev {
-        margin-top: 8px;
-        @media (max-width: 360px){
-              display: none;
+        transition: all .3s;
+        &:hover {
+            transform: scale(1.20);
         }
-        
+        @media (max-width: 360px){
+            display: none;
+      }
     }
 
     // .team__arrow-left
 
     &__arrow-left {
-        margin-top: 8px;
-        @media (max-width: 360px){
-            display: none;
-      }
+
     }
 
     // .team__play-dots
@@ -1083,6 +1087,13 @@ img {
     // .team__play-next
 
     &__play-next {
+        transition: all .3s;
+        &:hover {
+            transform: scale(1.20);
+        }
+        @media (max-width: 360px){
+            display: none;
+      }
     }
 }
 

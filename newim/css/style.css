@@ -697,10 +697,10 @@ img {
 }
 
 .nft__play-dots .slick-active {
-  width: 15px;
-  height: 15px;
-  background: linear-gradient(137.29deg, #C87506 13.78%, #F2D54A 83.33%);
   border-radius: 50%;
+  background-color: #F6E051;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .nft__play-dots button {
@@ -717,17 +717,17 @@ img {
 }
 
 .nft__play-dots button:hover {
-  -webkit-transform: scale(1.12);
-          transform: scale(1.12);
-  background-color: #77FBF9;
   border-radius: 50%;
+  background-color: #F6E051;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .nft__play-dots button::before {
   content: "";
   width: 11px;
   height: 11px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-image: url(../img/dotsnone.png);
   border-radius: 50%;
   border: 1px solid white;
 }
@@ -747,21 +747,32 @@ img {
           align-items: center;
 }
 .nft__play-prev {
-  margin-top: 8px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.nft__play-prev:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 @media (max-width: 360px) {
   .nft__play-prev {
     display: none;
   }
 }
-.nft__arrow-left {
-  margin-top: 8px;
+.nft__play-next {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.nft__play-next:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 @media (max-width: 360px) {
-  .nft__arrow-left {
+  .nft__play-next {
     display: none;
   }
 }
+
 .container--team {
   position: relative;
 }
@@ -873,10 +884,10 @@ img {
 }
 
 .team__play-dots .slick-active {
-  width: 15px;
-  height: 15px;
-  background: linear-gradient(137.29deg, #C87506 13.78%, #F2D54A 83.33%);
   border-radius: 50%;
+  background-color: #F6E051;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .team__play-dots button {
@@ -893,9 +904,9 @@ img {
 }
 
 .team__play-dots button:hover {
-  -webkit-transform: scale(1.12);
-          transform: scale(1.12);
-  background-color: #77FBF9;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  background-color: #F6E051;
   border-radius: 50%;
 }
 
@@ -903,7 +914,7 @@ img {
   content: "";
   width: 11px;
   height: 11px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-image: url(../img/dotsnone.png);
   border-radius: 50%;
   border: 1px solid white;
 }
@@ -923,21 +934,32 @@ img {
           justify-content: center;
 }
 .team__play-prev {
-  margin-top: 8px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.team__play-prev:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 @media (max-width: 360px) {
   .team__play-prev {
     display: none;
   }
 }
-.team__arrow-left {
-  margin-top: 8px;
+.team__play-next {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.team__play-next:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 @media (max-width: 360px) {
-  .team__arrow-left {
+  .team__play-next {
     display: none;
   }
 }
+
 .container--roadmap {
   position: relative;
 }
