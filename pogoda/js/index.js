@@ -4,7 +4,7 @@ document.querySelector('.weather__inner').style.display = 'none';
 function myCity() {
     const select = document.querySelector('.select-city').value;
     if (select === 'spb') {
-        fetch('http://api.openweathermap.org/data/2.5/weather?id=498817&lang=ru&appid=5fc11624a8ab73015fc091702d121b07')
+        fetch('https://api.openweathermap.org/data/2.5/weather?id=498817&lang=ru&appid=5fc11624a8ab73015fc091702d121b07')
             .then(function (resp) { return resp.json() })
             .then(function (data) {
                 console.log(data)
@@ -23,7 +23,7 @@ function myCity() {
             });
     }
     if (select === 'msk') {
-        fetch('http://api.openweathermap.org/data/2.5/weather?id=524894&lang=ru&appid=5fc11624a8ab73015fc091702d121b07')
+        fetch('https://api.openweathermap.org/data/2.5/weather?id=524894&lang=ru&appid=5fc11624a8ab73015fc091702d121b07')
             .then(function (resp) { return resp.json() })
             .then(function (data) {
                 document.querySelector('.weather').style.background = 'url(../image/msk.jpg)';
@@ -42,7 +42,7 @@ function myCity() {
 
     }
     if (select === 'vlg') {
-        fetch('http://api.openweathermap.org/data/2.5/weather?id=472750&lang=ru&appid=5fc11624a8ab73015fc091702d121b07')
+        fetch('https://api.openweathermap.org/data/2.5/weather?id=472750&lang=ru&appid=5fc11624a8ab73015fc091702d121b07')
             .then(function (resp) { return resp.json() })
             .then(function (data) {
                 document.querySelector('.weather').style.background = 'url(../image/vlg.webp)';
