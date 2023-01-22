@@ -1,0 +1,96 @@
+
+label {
+    color: white;
+}
+
+select {
+    font-size: 20px;
+}
+
+option {
+    font-size: 20px;
+}
+
+
+.weather {
+    background-image: url(../image/one.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Montserrat';
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+        font-size:30px;
+        font-weight: 600;
+        color: white;
+        margin-bottom: 30px;
+        text-align:center;
+    }
+
+    &__select {
+        margin-bottom: 70px;
+        font-size: 19px;
+        font-weight: 600;
+    };
+
+    // .weather__inner
+
+    &__inner {
+        background-color: rgb(255, 255, 255);
+        padding: 20px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    // .weather__title
+
+    &__city {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    // .weather__temp
+
+    &__temp {
+        font-size: 50px;
+        font-weight: 700;
+    }
+
+    &__disc {
+        font-size: 20px;
+        text-transform: capitalize;
+    }
+    &__fitch {
+        width: 200px;
+        height: 200px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+.container {
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
