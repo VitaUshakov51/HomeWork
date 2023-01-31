@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html class="desktop landscape" lang="en-US"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <title>Практика по массивам - получаем прогноз погоды по API. Курсы Лущенко Александра</title>
+  
+    <link href="14_files/style.css" rel="stylesheet">
+<link href="14_files/course.css" rel="stylesheet">	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="14_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-164473539-1');
+</script>
+<style>._3emE9--dark-theme .-S-tR--ff-downloader{background:rgba(30,30,30,.93);border:1px solid rgba(82,82,82,.54);box-shadow:0 4px 7px rgba(30,30,30,.55);color:#fff}._3emE9--dark-theme .-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn{background:#3d4b52}._3emE9--dark-theme .-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn:hover{background:#131415}._3emE9--dark-theme .-S-tR--ff-downloader ._10vpG--footer{background:rgba(30,30,30,.93)}._2mDEx--white-theme .-S-tR--ff-downloader{background:#fff;border:1px solid rgba(82,82,82,.54);box-shadow:0 4px 7px rgba(30,30,30,.55);color:#314c75}._2mDEx--white-theme .-S-tR--ff-downloader ._6_Mtt--header{font-weight:700}._2mDEx--white-theme .-S-tR--ff-downloader ._2dFLA--container ._2bWNS--notice{border:0;color:rgba(0,0,0,.88)}._2mDEx--white-theme .-S-tR--ff-downloader ._10vpG--footer{background:#fff}.-S-tR--ff-downloader{display:block;overflow:hidden;position:fixed;bottom:20px;right:7.1%;width:330px;height:180px;background:rgba(30,30,30,.93);border-radius:2px;color:#fff;z-index:99999999;border:1px solid rgba(82,82,82,.54);box-shadow:0 4px 7px rgba(30,30,30,.55);transition:.5s}.-S-tR--ff-downloader._3M7UQ--minimize{height:62px}.-S-tR--ff-downloader._3M7UQ--minimize .nxuu4--file-info,.-S-tR--ff-downloader._3M7UQ--minimize ._6_Mtt--header{display:none}.-S-tR--ff-downloader ._6_Mtt--header{padding:10px;font-size:17px;font-family:sans-serif}.-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn{float:right;background:#f1ecec;height:20px;width:20px;text-align:center;padding:2px;margin-top:-10px;cursor:pointer}.-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn:hover{background:#e2dede}.-S-tR--ff-downloader ._13XQ2--error{color:red;padding:10px;font-size:12px;line-height:19px}.-S-tR--ff-downloader ._2dFLA--container{position:relative;height:100%}.-S-tR--ff-downloader ._2dFLA--container .nxuu4--file-info{padding:6px 15px 0;font-family:sans-serif}.-S-tR--ff-downloader ._2dFLA--container .nxuu4--file-info div{margin-bottom:5px;width:100%;overflow:hidden}.-S-tR--ff-downloader ._2dFLA--container ._2bWNS--notice{margin-top:21px;font-size:11px}.-S-tR--ff-downloader ._10vpG--footer{width:100%;bottom:0;position:absolute;font-weight:700}.-S-tR--ff-downloader ._10vpG--footer ._2V73d--loader{animation:n0BD1--rotation 3.5s linear forwards;position:absolute;top:-120px;left:calc(50% - 35px);border-radius:50%;border:5px solid #fff;border-top-color:#a29bfe;height:70px;width:70px;display:flex;justify-content:center;align-items:center}.-S-tR--ff-downloader ._10vpG--footer ._24wjw--loading-bar{width:100%;height:18px;background:#dfe6e9;border-radius:5px}.-S-tR--ff-downloader ._10vpG--footer ._24wjw--loading-bar ._1FVu9--progress-bar{height:100%;background:#8bc34a;border-radius:5px}.-S-tR--ff-downloader ._10vpG--footer ._2KztS--status{margin-top:10px}.-S-tR--ff-downloader ._10vpG--footer ._2KztS--status ._1XilH--state{float:left;font-size:.9em;letter-spacing:1pt;text-transform:uppercase;width:100px;height:20px;position:relative}.-S-tR--ff-downloader ._10vpG--footer ._2KztS--status ._1jiaj--percentage{float:right}</style></head>
+<body>
+
+<main class="main">
+    <div class="main-inner" style="margin-bottom: 625.6px;">
+        <!-- Begin mobile main menu -->
+      <nav class="bread-crumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <ul class="bread-crumbs-list">
+<li><a href="../start.htm">JavaScript v.2.0</a></li>
+<li class="active">Практика по массивам - получаем прогноз погоды по API
+</li>
+</ul>            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="main-content">
+    <div class="container">
+        <div class="row content-items">
+            <div class="col-lg-9 col-12 content-item">
+                <div class="blog-post">
+                    <header class="blog-post-header">
+                        <h1 class="blog-post-title">Unit 14. Практика по массивам - получаем прогноз погоды по API</h1>
+                    </header>
+<!--                    <div class="blog-post-img">-->
+                        <video width="560" height="315" controls="controls">
+                            <source src="14 Практика по массивам - получаем прогноз погоды по API.mp4">
+                        </video>                       
+<!--                    </div>-->
+                    <article class="blog-post-article content">
+                        <section>
+                            <div class="wraper-btn "><a href="unit_blank.zip" class="btn btn-widht-ico btn-border btn-small ripple"><span>Скачать шаблон</span><div class="ripple-effect" style="left: 109.5px; top: 20.65px; opacity: 0.991532;"></div></a><a href="work-with-api-javascript.zip" class="btn btn-widht-ico btn-border btn-small ripple"><span>Код урока</span></a></div>
+
+                        </section>
+						 <div class="unit-text">
+                                                    </div>
+                    </article>
+                    <div class="dz mt-3" id="anchor-dz">
+                        <h2>Домашнее задание</h2>
+                        <div class="dz-load">
+                            
+                       </div>
+                    </div>
+                    <section class="tasks-section">
+                        <div class="unit-task-block"><div class="unit-task-block-header" id="t-312"><a href="#-312">Task 1</a></div><div class=""><p>Сегодня
+ у нас проект! Вы повторяете действия видео и выводите на страницу 
+информацию о погоде. В принципе, после этого вы можете прислать мне ДЗ 
+на проверку. Но, надеюсь, посколько это проект - то вы пойдете дальше - 
+добавите возможность выбирать города в выпадающем списке - или 
+предоставите пользователю вводить имя города на странице, будете 
+выводить всю информацию о погоде, снабдите ее иконками, будете выводить 
+страну, где находится город. Также, если совсем делать красиво, можно 
+получать прогноз погоды на несколько дней вперед! Это проект - и вы 
+решаете когда его закончить! И, надеюсь, вы поймете ценность массивов!</p>
+<p>Обратите внимание, что в данном случае, не нужно использовать blank  - оформление отдается вам!</p></div></div>                    </section>
+                    <section>
+                                                                                            </section>
+                </div> <!--row end -->
+            </div>
+            <div class="col-lg-3 col-12 content-item">
+                
+
+<div class="section-bg item-border-radius sibebar-item-bg text-center" style="margin-bottom: 10px">
+    <a href="dz.htm">
+        <img src="01_files/dz.png" alt="">
+    </a>
+    <p>Правила оформления домашних заданий</p>
+    <a href="dz.htm" class="btn btn-small ripple">Открыть</a>
+</div>
+
+            </div>
+        </div>
+    </div>
+</div>       
+</div></main><!-- End main -->
+
+    
+
+<script src="14_files/jquery.js"></script>
+<script src="14_files/yii_003.js"></script>
+<script src="14_files/yii_002.js"></script>
+<script src="14_files/yii.js"></script>
+<script src="14_files/script.js"></script>
+<script src="14_files/custom.js"></script>
+<script>jQuery(function ($) {
+jQuery('#w0').yiiActiveForm([{"id":"uploadform-imagefile","name":"imageFile","container":".field-uploadform-imagefile","input":"#uploadform-imagefile","validate":function (attribute, value, messages, deferred, $form) {yii.validation.file(attribute, messages, {"message":"File upload failed.","skipOnEmpty":false,"uploadRequired":"Please upload a file.","mimeTypes":[],"wrongMimeType":"Only files with these MIME types are allowed: .","extensions":["zip"],"wrongExtension":"Only files with these extensions are allowed: zip.","maxSize":1000000,"tooBig":"The file \"{file}\" is too big. Its size cannot exceed 976.562 KiB.","maxFiles":1,"tooMany":"You can upload at most 1 file."});}}], []);
+});</script>	
+
+
+<div class="mf-bg"></div></body></html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html class="desktop landscape" lang="en-US"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <title>Оператор If, else, switch case - выбор в JavaScript. Курсы Лущенко Александра</title>
+   
+    <link href="03_files/style.css" rel="stylesheet">
+<link href="03_files/course.css" rel="stylesheet">	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="03_files/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-164473539-1');
+</script>
+<style>._3emE9--dark-theme .-S-tR--ff-downloader{background:rgba(30,30,30,.93);border:1px solid rgba(82,82,82,.54);box-shadow:0 4px 7px rgba(30,30,30,.55);color:#fff}._3emE9--dark-theme .-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn{background:#3d4b52}._3emE9--dark-theme .-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn:hover{background:#131415}._3emE9--dark-theme .-S-tR--ff-downloader ._10vpG--footer{background:rgba(30,30,30,.93)}._2mDEx--white-theme .-S-tR--ff-downloader{background:#fff;border:1px solid rgba(82,82,82,.54);box-shadow:0 4px 7px rgba(30,30,30,.55);color:#314c75}._2mDEx--white-theme .-S-tR--ff-downloader ._6_Mtt--header{font-weight:700}._2mDEx--white-theme .-S-tR--ff-downloader ._2dFLA--container ._2bWNS--notice{border:0;color:rgba(0,0,0,.88)}._2mDEx--white-theme .-S-tR--ff-downloader ._10vpG--footer{background:#fff}.-S-tR--ff-downloader{display:block;overflow:hidden;position:fixed;bottom:20px;right:7.1%;width:330px;height:180px;background:rgba(30,30,30,.93);border-radius:2px;color:#fff;z-index:99999999;border:1px solid rgba(82,82,82,.54);box-shadow:0 4px 7px rgba(30,30,30,.55);transition:.5s}.-S-tR--ff-downloader._3M7UQ--minimize{height:62px}.-S-tR--ff-downloader._3M7UQ--minimize .nxuu4--file-info,.-S-tR--ff-downloader._3M7UQ--minimize ._6_Mtt--header{display:none}.-S-tR--ff-downloader ._6_Mtt--header{padding:10px;font-size:17px;font-family:sans-serif}.-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn{float:right;background:#f1ecec;height:20px;width:20px;text-align:center;padding:2px;margin-top:-10px;cursor:pointer}.-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn:hover{background:#e2dede}.-S-tR--ff-downloader ._13XQ2--error{color:red;padding:10px;font-size:12px;line-height:19px}.-S-tR--ff-downloader ._2dFLA--container{position:relative;height:100%}.-S-tR--ff-downloader ._2dFLA--container .nxuu4--file-info{padding:6px 15px 0;font-family:sans-serif}.-S-tR--ff-downloader ._2dFLA--container .nxuu4--file-info div{margin-bottom:5px;width:100%;overflow:hidden}.-S-tR--ff-downloader ._2dFLA--container ._2bWNS--notice{margin-top:21px;font-size:11px}.-S-tR--ff-downloader ._10vpG--footer{width:100%;bottom:0;position:absolute;font-weight:700}.-S-tR--ff-downloader ._10vpG--footer ._2V73d--loader{animation:n0BD1--rotation 3.5s linear forwards;position:absolute;top:-120px;left:calc(50% - 35px);border-radius:50%;border:5px solid #fff;border-top-color:#a29bfe;height:70px;width:70px;display:flex;justify-content:center;align-items:center}.-S-tR--ff-downloader ._10vpG--footer ._24wjw--loading-bar{width:100%;height:18px;background:#dfe6e9;border-radius:5px}.-S-tR--ff-downloader ._10vpG--footer ._24wjw--loading-bar ._1FVu9--progress-bar{height:100%;background:#8bc34a;border-radius:5px}.-S-tR--ff-downloader ._10vpG--footer ._2KztS--status{margin-top:10px}.-S-tR--ff-downloader ._10vpG--footer ._2KztS--status ._1XilH--state{float:left;font-size:.9em;letter-spacing:1pt;text-transform:uppercase;width:100px;height:20px;position:relative}.-S-tR--ff-downloader ._10vpG--footer ._2KztS--status ._1jiaj--percentage{float:right}</style></head>
+<body>
+
+<main class="main">
+    <div class="main-inner" style="margin-bottom: 625.6px;">
+        <!-- Begin mobile main menu -->
+      <nav class="bread-crumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <ul class="bread-crumbs-list">
+<li><a href="../start.htm">JavaScript v.2.0</a></li>
+<li class="active">Оператор If, else, switch case - выбор в JavaScript
+</li>
+</ul>            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="main-content">
+    <div class="container">
+        <div class="row content-items">
+            <div class="col-lg-9 col-12 content-item">
+                <div class="blog-post">
+                    <header class="blog-post-header">
+                        <h1 class="blog-post-title">Unit 3. Оператор If, else, switch case - выбор в JavaScript</h1>
+                    </header>
+<!--                    <div class="blog-post-img">-->
+                        <video width="560" height="315" controls="controls">
+                            <source src="03 JavaScript v.2.0. Ветвление If, else, switch.mp4">
+                        </video>
+                        <video width="560" height="315" controls="controls">
+                            <source src="03 6 ошибок новичков JavaScript. Анализ после 20 000 домашних заданий.mp4">
+                        </video>                    
+<!--                    </div>-->
+                    <article class="blog-post-article content">
+                        <section>
+                            <div class="wraper-btn "><a href="dz_03_blank.zip" class="btn btn-widht-ico btn-border btn-small ripple"><span>Скачать шаблон</span></a><a href="if-else.zip" class="btn btn-widht-ico btn-border btn-small ripple"><span>Код урока</span></a>
+
+                        </section>
+						 <div class="unit-text">
+                                                    </div>
+                    </article>
+                    <div class="dz mt-3" id="anchor-dz">
+                        <h2>Домашнее задание</h2>
+                        <div class="dz-load">
+                            
+                       </div>
+                    </div>
+                    <section class="tasks-section">
+                        <div class="unit-task-block"><div class="unit-task-block-header" id="t-147"><a href="#">Task 1</a></div><div class=""><p>При
+ нажатии кнопки b-1 срабатывает функция f1. Функция должна прочитать 
+содержимое i-1 и сравнить его с числом 4 (сравнение ==). Результат 
+сравнения - true или false выведите в out-1.</p></div></div><div class="unit-task-block unit-task-block-active"><div class="unit-task-block-header" id="t-148"><a href="#">Task 2</a></div><div class=""><p>Даны
+ две переменные a21 и a22. При нажатии кнопки b-2, запускается функция 
+f2. Функция должна сравнить переменные с помощью if else и вывести в 
+out-2 число, которое больше. Вариант равенства переменных не 
+рассматриваем.</p></div></div><div class="unit-task-block"><div class="unit-task-block-header" id="t-149"><a href="#">Task 3</a></div><div class=""> <p>Даны
+ 2 input - i-31 и i-32, оба - input[type=number]. При нажатии кнопки b-3
+ срабатывает функция f3. Функция должна прочитать содержимое i-31 и i-32
+ в переменные и сравнить их, вывести в  out-3 большее число.</p>
+        <p>Проведите самостоятельный тест работы, введите пары чисел 4 и 9, 9 и 22, 5 и 111.</p></div></div><div class="unit-task-block unit-task-block-active"><div class="unit-task-block-header" id="t-150"><a href="#">Task 4</a></div><div class=""><p>Создайте
+ на странице input[type=number] с классом i-4, куда пользователь может 
+ввести год своего рождения. Есть кнопка b-4 которая запускает функцию 
+f4. Функция должна вывести в  .out-4 число 1 если пользователю больше 
+или равно 18 лет, и 0 если меньше.</p></div></div><div class="unit-task-block"><div class="unit-task-block-header" id="t-151"><a href="#">Task 5</a></div><div class=""><p>Создайте
+ на странице input[type=number] с классом i-5, куда пользователь может 
+ввести число. Есть кнопка b-5 которая запускает функцию f5. Функция 
+должна вывести в  .out-5 символ m если число меньше нуля, 0 если число 
+равно нулю и 1 если больше.</p></div></div><div class="unit-task-block unit-task-block-active"><div class="unit-task-block-header" id="t-152"><a href="#">Task 6</a></div><div class=""><p>Создайте
+ на странице input[type=number] с классом i-6, куда пользователь может 
+ввести число. Есть кнопка b-6 которая запускает функцию f6. Функция 
+должна вывести в  .out-6  слово even если число четное и odd если 
+нечетное. Для проверки четности используется целочисленный остаток от 
+деления на 2 (оператор %). Если остаток равен нулю  - четное, нет - 
+нечетное.</p></div></div><div class="unit-task-block"><div class="unit-task-block-header" id="t-153"><a href="#">Task 7</a></div><div class=""><p>Даны
+ 2 input - i-71 и i-72, оба - input[type=number]. При нажатии кнопки b-7
+ срабатывает функция f7. Функция должна число из i-71 возвести в степень
+ i-72, вывести результат в  out-7. Для возведения в степень можно 
+использовать **, или Math.pow.</p></div></div><div class="unit-task-block unit-task-block-active"><div class="unit-task-block-header" id="t-154"><a href="#">Task 8</a></div><div class=""><p>Дан
+ select s-8, который содержит 3 значения: 1, 2, 3. Дана кнопка b-8. При 
+ее  нажатии срабатывает функция f8. Функция должна получить выбранное в 
+select число, потом с помощью switch case сравнить его поочередно с ‘1’,
+ ‘2’, ‘3’. И если число выбрано - 1, то вывести в out-8 строку one, если
+ 2 - two, если 3 - three.</p></div></div><div class="unit-task-block"><div class="unit-task-block-header" id="t-155"><a href="#">Task 9</a></div><div class=""><p>
+ Создайте на странице input[type=number] с классом i-9, куда 
+пользователь может ввести номер квартиры. Есть кнопка b-9 которая 
+запускает функцию f9. Функция должна вывести в  .out-9 номер подъезда, в
+ котором находится квартира. </p>
+ <ul>
+<li>если от 1 до 32 - то вывести цифру 1</li>
+<li>если от 33 до 43 - то вывести 2</li>
+<li>если от 44 до 64 - то 3.</li>
+<li>В противном случае, вывести 0.</li><ul></ul></ul></div></div><div class="unit-task-block unit-task-block-active"><div class="unit-task-block-header" id="t-916"><a href="#">Task 10</a></div><div class=""> <p>Дан select s-100. По нажатию кнопки, выведите value выбранного option в out-10.</p></div></div><div class="unit-task-block"><div class="unit-task-block-header" id="t-917"><a href="#">Task 11</a></div><div class=""> <p>Дан select s-110. По изменению состояния select (событие onchange) выведите value выбранного option в out-11.</p></div></div><div class="unit-task-block unit-task-block-active"><div class="unit-task-block-header" id="t-918"><a href="#">Task 12</a></div><div class=""> <p>Дан
+ input i-120. По нажатию кнопки получите значение из input  в 
+переменную, а затем выведите в out-12 typeof полученной переменной. 
+Typeof позволяет определить тип данных. Обратите внимание, данная задача
+ уже решена, нужно убрать комментарии и изучить работу. </p></div></div><div class="unit-task-block"><div class="unit-task-block-header" id="t-919"><a href="#">Task 13</a></div><div class=""> <p>Дан
+ input i-130. В отличие от предыдущего задания - input type number. По 
+нажатию кнопки получите значение из input  в переменную, а затем 
+выведите в out-13 typeof полученной переменной. Typeof позволяет 
+определить тип данных. Если вы правильно все сделали - то удивительно, 
+но тип данных будет string! Подумайте почему так? </p></div></div><div class="unit-task-block unit-task-block-active"><div class="unit-task-block-header" id="t-156"><a href="#">Task 14</a></div><div class=""><p>Дан
+ input i-141 и input-142, type=number.  Дан select s-143, который 
+содержит две операции - +, -, *, / . Дана кнопка b-14, при нажатии на 
+которую срабатывает функция f14. Функция выводит в out-14 результат 
+операций выбранной в 3-м select к числам введенным в первом и втором 
+input. Например выбрано 1 13 +, нужно вывести результат операции 1+13 
+т.е.  14.
+        </p></div></div><div class="unit-task-block"><div class="unit-task-block-header" id="t-157"><a href="#">Task 15</a></div><div class=""><p>Дан
+ select s-151 и s-152, каждый из которых содержит 1 и 0.  Дан select 
+s-153, который содержит две операции - &amp;&amp; и || . Дана кнопка 
+b-15, при нажатии на которую срабатывает функция f15. Функция выводит в 
+out-15 результат логических операций выбранных в 3 select к числам 
+выбранным в первом и втором select. Например выбрано 1 1 &amp;&amp;, 
+нужно вывести результат операции 1&amp;&amp;1 т.е. 1 или 0. </p></div></div>                    </section>
+                    <section>
+                                                                                            </section>
+                </div> <!--row end -->
+            </div>
+            <div class="col-lg-3 col-12 content-item">
+                
+
+
+<div class="section-bg item-border-radius sibebar-item-bg text-center" style="margin-bottom: 10px">
+    <a href="dz.htm">
+        <img src="01_files/dz.png" alt="">
+    </a>
+    <p>Правила оформления домашних заданий</p>
+    <a href="dz.htm" class="btn btn-small ripple">Открыть</a>
+</div>
+
+            </div>
+        </div>
+    </div>
+</div> 
+
+</div></main><!-- End main -->
+
+    
+
+<script src="03_files/jquery.js"></script>
+<script src="03_files/yii_003.js"></script>
+<script src="03_files/yii_002.js"></script>
+<script src="03_files/yii.js"></script>
+<script src="03_files/script.js"></script>
+<script src="03_files/custom.js"></script>
+<script>jQuery(function ($) {
+jQuery('#w0').yiiActiveForm([{"id":"uploadform-imagefile","name":"imageFile","container":".field-uploadform-imagefile","input":"#uploadform-imagefile","validate":function (attribute, value, messages, deferred, $form) {yii.validation.file(attribute, messages, {"message":"File upload failed.","skipOnEmpty":false,"uploadRequired":"Please upload a file.","mimeTypes":[],"wrongMimeType":"Only files with these MIME types are allowed: .","extensions":["zip"],"wrongExtension":"Only files with these extensions are allowed: zip.","maxSize":1000000,"tooBig":"The file \"{file}\" is too big. Its size cannot exceed 976.562 KiB.","maxFiles":1,"tooMany":"You can upload at most 1 file."});}}], []);
+});</script>	
+
+
+<div class="mf-bg"></div></body></html>
