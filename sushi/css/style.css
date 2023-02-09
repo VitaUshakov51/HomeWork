@@ -271,6 +271,14 @@ a:visited {
     box-shadow: 0px 0px 6px 4px rgba(255, 255, 255, 0.5);
 }
 
+.chef__actions-link:visited {
+    background-color: #bebebe;
+}
+
+.chef__actions-link:active {
+    background-color: #ffaf18;
+}
+
 
 .chef__actions-link:first-child img {
     padding: 13px 6px 36px 8px;
@@ -291,6 +299,7 @@ a:visited {
 
 .footer {
     padding:30px 0 30px 0 ;
+    background-color: black;
 }
 
 .footer__logo {
