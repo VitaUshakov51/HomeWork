@@ -219,6 +219,19 @@ p, h1, h2, h3, h4, h5, h6 {
     align-items: center;
     justify-content: center;
     transition: all .3s;
+    animation: pulse 3s linear infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 .macaroons__button {
@@ -247,6 +260,16 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .advantages__image {
     max-width: 520px;
+    animation: advantages-rotate 20s linear infinite ;
+}
+
+@keyframes advantages-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .advantages__image-img {
@@ -284,6 +307,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .advantages__item {
+    z-index: 2;
     font-family: "Gilroy", sans-serif;
     cursor: default;
 }
