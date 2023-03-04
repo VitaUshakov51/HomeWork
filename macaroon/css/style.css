@@ -286,6 +286,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .advantages__item {
     font-family: "Gilroy", sans-serif;
     cursor: default;
+    transition: all .3s;
 }
 
 .advantages__item:hover .advantages__circle {
