@@ -1,8 +1,5 @@
 @media screen and (max-width: 1100px) {
 
-    .present {
-        display: none;
-    }
 
     .order__container {
         flex-direction: row-reverse;
@@ -165,14 +162,15 @@
     }
 
     .header__menu {
-        display: none;
         position: fixed;
+        transform: translateY(-100%);
         width: 100%;
         height: 100%;
         top: 0;
         left: 0;
-        background: #000000a6;
+        background: #000000d9;
         z-index: 1000;
+        transition: all 1s;
     }
 
 
@@ -196,6 +194,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        transform: translateY(0%);
     }
 
     .header__close {
