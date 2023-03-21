@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ControlWork9</title>
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/hover-min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Приемущества</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Цены</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Контакты</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Поиск чая" aria-label="Search">
+                    <button class="btn btn-outline-primary" id="search" type="submit">Найти</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+<main class="overflow-hidden">
+    <section class="pt-5 pb-5 animate__animated animate__zoomIn">
+        <div class="container-xl position-relative ">
+            <div class="slider">
+                <div class="slide">
+                    <img class="slide-img w-100" src="images/slide1.png" alt="Чай">
+                </div>
+                <div class="slide">
+                    <img class="slide-img w-100" src="images/slide2.png" alt="Чай">
+                </div>
+                <div class="slide">
+                    <img class="slide-img w-100" src="images/slide3.png" alt="Чай">
+                </div>
+            </div>
+            <div class="arrows ">
+                <button class="arrowLeft position-absolute top-50 start-0 translate-middle bg-transparent border-0">
+                    <img src="images/arrowL.png" alt="Стрелка влево">
+                </button>
+                <button class="arrowRight position-absolute top-50 start-100 translate-middle bg-transparent border-0">
+                    <img src="images/arrowR.png" alt="Стрелка вправо">
+                </button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h2 class="fw-bold text-center mb-5">Наши чайные коллекции</h2>
+            <div class= "cards">
+                <div class="row mb-3" >
+                    <div class="col-lg-4 mb-3">
+                        <div class="card h-100 wow animate__flipInY" >
+                            <a class="image-link" href="images/card1.png">
+                                <img src="images/card1.png" class="card-img-top" alt="Детокс чай лайм">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Детокс чай лайм</h5>
+                                <p class="card-text w-100">Великолепный чай внесет в вашу жизнь яркие краски и вкус расслабления</p>
+                                <a href="#" class="btn btn-primary w-50 hvr-rectangle-in">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-3">
+                        <div class="card h-100 wow animate__flipInY" >
+                            <a class="image-link" href="images/card2.png">
+                                <img src="images/card2.png" class="card-img-top" alt="Ягодный чай">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Ягодный чай</h5>
+                                <p class="card-text">Нотки ягод позволят вам расслабиться и насладиться великолепием этого чая</p>
+                                <a href="#" class="btn btn-primary w-50 hvr-rectangle-in">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-3">
+                        <div class="card h-100 wow animate__flipInY" >
+                            <a class="image-link" href="images/card3.png">
+                                <img src="images/card3.png" class="card-img-top" alt="Цветочный чай">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Цветочный чай</h5>
+                                <p class="card-text">Душистые цветы создают невероятный аромат и наполняют вас энергией</p>
+                                <a href="#" class="btn btn-primary w-50 hvr-rectangle-in">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 mb-3 ">
+                        <div class="card h-100 wow animate__flipInY" >
+                            <a class="image-link" href="images/card4.png">
+                                <img src="images/card4.png" class="card-img-top" alt="Очищающий чай">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Очищающий чай</h5>
+                                <p class="card-text">Бесподобный чай для получения утреннего заряда бодрости</p>
+                                <a href="#" class="btn btn-primary w-50 hvr-rectangle-in">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-3">
+                        <div class="card h-100 wow animate__flipInY" >
+                            <a class="image-link" href="images/card5.png">
+                                <img src="images/card5.png" class="card-img-top" alt="Кислый чай">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Кислый чай</h5>
+                                <p class="card-text">Кислый чай для настоящих ценителей кислинки во время чаепития</p>
+                                <a href="#" class="btn btn-primary w-50 hvr-rectangle-in">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-3">
+                        <div class="card h-100 wow animate__flipInY" >
+                            <a class="image-link" href="images/card6.png">
+                                <img src="images/card6.png" class="card-img-top" alt="Лимонная мята">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Лимонная мята</h5>
+                                <p class="card-text">Смесь лимона с мятой сделает ваш день самым лучшим</p>
+                                <a href="#" class="btn btn-primary w-50 hvr-rectangle-in">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pt-5 pb-5 wow animate__fadeInDown">
+        <div class="container-xl ">
+            <h2 class=" fw-bold text-center mb-5">Ответы на часто задаваемые вопросы</h2>
+            <div id="accordion" class="col-lg-8 m-auto">
+                <h3 class="fw-bold">Собираете ли вы подарочные боксы?</h3>
+                <div>
+                    <p>Да, у нас есть такая услуга. Мы можем собрать подарочный бокс на любой вкус, объем и стоимость!</p>
+                </div>
+                <h3 class="fw-bold">Сколько у вас разновидностей чая?</h3>
+                <div>
+                    <p>У нас более 2000 разновидностей чая со всех уголков света!</p>
+                </div>
+                <h3 class="fw-bold">В какой срок осуществляется доставка?</h3>
+                <div>
+                    <p>Доставка о 1 до 3 дней по Москве и МО</p>
+                </div>
+                <h3 class="fw-bold">У вас обновляется ассортимент?</h3>
+                <div>
+                    <p>Конечно! Мы стараемся регулярно обновлять свой ассортимент!</p>
+                </div>
+                <h3 class="fw-bold">Какого объема у вас пачки чая?</h3>
+                <div>
+                    <p>От 100 гр до 1 кг</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="pb-5 ">
+        <div class="container-xl">
+            <h2 class="text-center mb-5 fw-bold " id="orderTitle">Сделать заказ</h2>
+            <form action="" class="col-lg-8 m-auto wow animate__zoomInDown">
+                <div class="row ">
+                    <div class="col-lg-4 mb-3">
+                        <label for="name" class="form-label">Имя</label>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="col-lg-4 mb-3">
+                        <label for="lastName" class="form-label">Фамилия</label>
+                        <input type="text" class="form-control" id="lastName" >
+                    </div>
+                    <div class="col-lg-4 mb-3">
+                        <label for="phone" class="form-label">Телефон</label>
+                        <input type="text" class="form-control" id="phone">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 mb-3">
+                        <label for="country" class="form-label">Страна</label>
+                        <input type="text" class="form-control" id="country">
+                    </div>
+                    <div class="col-lg-6 mb-3">
+                        <label for="index" class="form-label">Индекс</label>
+                        <input type="text" class="form-control" maxlength="6" id="index">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 mb-3">
+                        <label for="address" class="form-label">Адрес</label>
+                        <input type="text" class="form-control" id="address">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <button class="btn btn-primary w-100" id="button" type="submit">Отправить</button>
+                    </div>
+                </div>
+            </form>
+            <div class="thanks d-none card col-lg-6 m-auto">
+                <img src="images/spasibo.png" class="card-img-top" alt="Рукопожатие">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Спасибо за заказ!</h5>
+                    <p class="card-text">Скоро наши специалисты с вами свяжутся, ожидайте :)</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-6" href="#">Все права защищены</a>
+        </div>
+    </nav>
+</footer>
+
+
+<script src="js/jquery-3.6.4.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/inputmask.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
