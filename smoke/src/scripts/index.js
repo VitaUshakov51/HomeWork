@@ -174,7 +174,7 @@ $(document).ready(function () {
         });
         var myPlacemark = new ymaps.Placemark([55.74224384, 37.65533961], {}, {
             iconLayout: 'default#image',
-            iconImageHref: '../../dist/images/free-icon-bar-288946.png',
+            iconImageHref: '../../dist/images/mapbar.png',
             iconImageSize: [138, 40],
             iconImageOffset: [-3, -42],
 
