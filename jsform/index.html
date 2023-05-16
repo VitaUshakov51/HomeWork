@@ -27,26 +27,36 @@
                 anytime.</p>
             <form action="" class="main__form">
                 <div class="main__item" id="itemName">
+                    <div class="fullname__error error">Поле может содержать только буквы и пробел (Имя Фамилия)</div>
                     <label for="fullName" class="main__label">Full name</label>
                     <input id="fullName" class="main__input" type="text">
                 </div>
-                <div class="main__item">
+                <div class="main__item" id="itemUserName">
+                    <div class="yourUsername__error error">Поле может содержать только буквы, цифры, символ подчеркивания и тире</div>
                     <label for="yourUsername" class="main__label">Your username</label>
                     <input id="yourUsername" class="main__input" type="text">
                 </div>
                 <div class="main__item" id="itemEmail">
+                    <div class="eMail__error error">Введите корректный e-mail</div>
                     <label for="eMail" class="main__label">E-mail</label>
-                    <input id="eMail" class="main__input" type="email">
+                    <input id="eMail" class="main__input" type="text">
                 </div>
-                <div class="main__item">
+                <div class="main__item" id="itemPassword">
+                    <div class="password__error error">Поле пароля должно содержать минимум 8 символов, среди которых есть:
+                        - хотя бы одна буква в верхнем регистре
+                        - хотя бы одна цифра
+                        - хотя бы один спецсимвол
+                    </div>
                     <label for="password" class="main__label">Password</label>
                     <input id="password" class="main__input" type="password">
                 </div>
                 <div class="main__item" id="itemRepeatPassword">
+                    <div class="repeatPassword__error error">Password и Repeat Password должны совпадать</div>
                     <label for="repeatPassword" class="main__label">Repeat Password</label>
                     <input id="repeatPassword" class="main__input" type="password">
                 </div>
                 <div class="main__item-checkbox" id="itemCheckBox">
+                    <div class="checkbox__error error">Вы должны согласиться с условиями</div>
                     <input id="checkbox" class="main__input-checkbox" type="checkbox">
                     <label for="checkbox" class="main__label-checkbox">Agree to our Terms of Service and Privacy
                         Statement</label>
