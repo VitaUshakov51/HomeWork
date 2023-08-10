@@ -39,7 +39,7 @@ export class Snake {
         };
 
         for (let i = 0; i < this.snake.length; i++) {
-            this.context.fillStyle = 'black';
+            this.context.fillStyle = 'yellow';
             this.context.beginPath();
             this.context.fillRect(this.snake[i].x * this.positionsSize - this.positionsSize,
                 this.snake[i].y * this.positionsSize - this.positionsSize, this.positionsSize, this.positionsSize);
