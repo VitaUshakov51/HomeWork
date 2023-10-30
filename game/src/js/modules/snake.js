@@ -1,24 +1,20 @@
 export class Snake {
-
     currentDirection = 'right';
-
     snake = [
         {x: 10, y: 20}
     ];
-
     context = null;
-    positionsSize = 20;
     positionsCount = 30;
+    positionsSize = 20;
 
-    constructor(context, positionsCount, positionsSize) {
+    constructor(context, positionsSize, positionsCount) {
         this.context = context;
         this.positionsCount = positionsCount;
         this.positionsSize = positionsSize;
-
-        this.addKeyboardHandler();
+        this.addKeyboardHanler();
     }
 
-    addKeyboardHandler() {
+    addKeyboardHanler() {
         document.addEventListener('keydown', (event) => {
             if (event.key === 'ArrowLeft' && this.currentDirection !== 'right') {
                 this.currentDirection = 'left';
@@ -30,20 +26,18 @@ export class Snake {
                 this.currentDirection = 'down';
             }
         })
-    }
+    };
 
     showSnake(foodPosition) {
         let result = {
             gotFood: false,
             collision: false,
-        };
-
+        }
         for (let i = 0; i < this.snake.length; i++) {
-            this.context.fillStyle = 'yellow';
+            this.context.fillStyle = 'black';
             this.context.beginPath();
             this.context.fillRect(this.snake[i].x * this.positionsSize - this.positionsSize,
                 this.snake[i].y * this.positionsSize - this.positionsSize, this.positionsSize, this.positionsSize);
-
         }
 
         let newHeadPosition = {
@@ -55,6 +49,7 @@ export class Snake {
             result.gotFood = true;
         } else {
             this.snake.pop();
+
         }
 
 
@@ -90,9 +85,8 @@ export class Snake {
             result.collision = true;
         }
 
-
         return result;
-    }
+    };
 
     checkNewHeadPositionForCollision(newHeadPosition) {
         for (let i = 0; i < this.snake.length; i++) {
@@ -100,7 +94,6 @@ export class Snake {
                 return true;
             }
         }
-
         return false;
     }
 }

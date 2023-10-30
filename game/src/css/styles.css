@@ -1,37 +1,30 @@
+canvas {
+    background-color: #1d8511;
+    border: 5px solid black;
+}
+
+body {
+    background-image: url("../img/пре-посы-ка-зе-еной-змейки-безшовная-84872327.webp");
+    background-repeat: repeat;
+    background-size: 300px;
+}
 
 .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.info {
+    background-color: white;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-
-    background-color: gray;
-    border: 3px solid black;
-    border-radius: 15px;
-}
-
-canvas {
-    background-color: green;
-    border: 3px solid black;
-    border-radius: 15px;
-}
-
-
-h1 {
-    text-transform: uppercase;
-    font-family: Arial,sans-serif;
-}
-
-.info  {
-    display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
-    font-size: 40px;
 }
 
 .score {
-    margin-left: 20px;
+    margin: 0 20px;
     font-size: 40px;
 }
 
@@ -39,8 +32,14 @@ h1 {
     padding: 20px;
     background-color: blue;
     color: white;
+    outline: 1px solid black;
     cursor: pointer;
-    border: 1px solid black;
-    border-radius: 15px;
 }
 
+.button:hover {
+    outline: 5px solid black;
+}
+
+.button--red {
+    background-color: #b40404;
+}

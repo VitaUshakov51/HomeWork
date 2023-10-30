@@ -3,13 +3,13 @@ import {Game} from "./modules/game.js";
 class App {
 
     settings = {
-        positionsCount: 30,
-        positionsSize: 20,
-    }
+      positionsCount:30,
+      positionsSize:20,
+    };
 
     constructor() {
         const canvas = document.createElement('canvas');
-        canvas.setAttribute('width',(this.settings.positionsCount * this.settings.positionsSize).toString());
+        canvas.setAttribute('width', (this.settings.positionsCount * this.settings.positionsSize).toString());
         canvas.setAttribute('height',(this.settings.positionsCount * this.settings.positionsSize).toString());
         document.getElementById('container').appendChild(canvas);
 
@@ -17,10 +17,7 @@ class App {
 
         new Game(context, this.settings);
 
-
-
     }
-
 }
 
 (new App());
