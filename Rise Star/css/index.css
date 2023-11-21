@@ -1,9 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
 
 .wrapper {
     min-height: 100vh;
@@ -87,11 +81,15 @@
 }
 
 .header__modile-language-link {
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
     transition: all .3s;
 }
 
 .header__modile-language-link:hover {
     color: #fff;
+    -webkit-transform: scale(1.10);
+    -ms-transform: scale(1.10);
     transform: scale(1.10);
 }
 
@@ -126,6 +124,8 @@
 
 .main__language-link:hover {
     color: white;
+    -webkit-transform: scale(1.10);
+    -ms-transform: scale(1.10);
     transform: scale(1.10);
 }
 
@@ -181,13 +181,21 @@
     }
 
     .header__actions {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         gap: 68px;
     }
     .header__modile-language {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         gap: 20px;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
 
@@ -205,13 +213,23 @@
     }
 
     .main__language {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
 
     .main {
         padding-top: 119px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
