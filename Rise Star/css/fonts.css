@@ -3,22 +3,42 @@
     font-style: normal;
     font-weight: 400;
     src: local("Rubik"),
-    url("../fonts/Rubik-Regular.ttf") format("ttf");
-    url("../fonts/Rubik-Regular.eot") format("eot");
-    url("../fonts/Rubik-Regular.woff") format("woff");
+    url("../fonts/Rubik-Regular.ttf") format("ttf"),
+    url("../fonts/Rubik-Regular.eot") format("eot"),
+    url("../fonts/Rubik-Regular.woff") format("woff"),
     url("../fonts/Rubik-Regular.woff2") format("woff2");
 }
+
+@font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    src: local("Rubik"),
+    url("../fonts/Rubik-Medium.ttf") format("ttf"),
+    url("../fonts/Rubik-Medium.eot") format("eot"),
+    url("../fonts/Rubik-Medium.woff") format("woff"),
+    url("../fonts/Rubik-Medium.woff2") format("woff2")
+
+}
+
 @font-face {
     font-family: "Tektur";
     font-style: normal;
     font-weight: 600;
     src: local("Tektur"),
-    url("../fonts/Tektur-SemiBold.ttf") format("ttf");
+    url("../fonts/Tektur-SemiBold.ttf") format("ttf"),
+    url("../fonts/Tektur-SemiBold.eot") format("eot"),
+    url("../fonts/Tektur-SemiBold.woff") format("woff"),
+    url("../fonts/Tektur-SemiBold.woff2") format("woff2")
 }
+
 @font-face {
     font-family: "Tektur";
     font-style: normal;
     font-weight: 700;
     src: local("Tektur"),
-    url("../fonts/Tektur-Bold.ttf") format("ttf");
+    url("../fonts/Tektur-Bold.ttf") format("ttf"),
+    url("../fonts/Tektur-Bold.eot") format("eot"),
+    url("../fonts/Tektur-Bold.woff") format("woff"),
+    url("../fonts/Tektur-Bold.woff2") format("woff2")
 }
