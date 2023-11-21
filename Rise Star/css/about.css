@@ -1,4 +1,10 @@
 
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    overflow:hidden ;
+}
+
 .hero {
     background-image: url("../images/about-hero.jpg");
     background-repeat: no-repeat;
@@ -364,4 +370,78 @@
 
 .team__item-text {
     max-width: 260px;
+}
+
+.footer {
+    padding-top: 60px;
+    background-color: #2F2E27;
+    text-align: center;
+}
+
+.footer__nav {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.footer__nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 40px;
+    color:#D5D4CE;
+    font-family: Rubik,sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 20.8px */
+    text-transform: uppercase;
+}
+
+.footer__nav-link {
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.footer__nav-link:hover {
+    color: #CDBB42;
+}
+
+.footer__contact {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 10px;
+    color:#FFF;
+    font-family: Rubik,sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 26px */
+}
+
+.footer__contact-address {
+    color: #D5D4CE;
+    font-size: 16px;
+}
+
+.footer__copyright {
+    border-top: 1px solid #38392E;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    color: #C9C8C8;
+    font-family: Rubik, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 18.2px */
 }
