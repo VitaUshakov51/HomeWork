@@ -104,9 +104,9 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 10;
-    -webkit-transition: all 2s;
-    -o-transition: all 2s;
-    transition: all 2s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
     overflow: auto;
 }
 
