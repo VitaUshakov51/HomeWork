@@ -1,0 +1,315 @@
+
+.clients__hero {
+    background-image: url("../images/clients-bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.clients {
+    padding: 120px 0px;
+}
+
+
+.clients__tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 40px;
+    color:#C9C8C8;
+    font-family: Tektur,sans-serif;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 57.2px */
+    text-transform: uppercase;
+}
+
+.clients__players, .clients__coach {
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    border-bottom: 4px solid #C9C8C8;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+}
+
+.clients__players:hover, .clients__coach:hover {
+    color: #CDBB42;
+    border-color: #CDBB42;
+}
+
+.clients__players.active , .clients__coach.active {
+    color: #CDBB42;
+    border-color: #CDBB42;
+}
+
+.clients__filter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.clients__filter-button {
+    padding: 10px 20px;
+    color:#BAB6A7;
+    font-family: Rubik,sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 20.8px */
+    border: 1px solid #BAB6A7;
+    border-radius: 100px;
+    cursor: pointer;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+.clients__filter-button:hover {
+    color:#838475;
+    border-color: #838475;
+}
+
+.clients__filter-button.active {
+    color:#fff;
+    background-color: #838475;
+    border-color: transparent;
+}
+
+.clients__item {
+    overflow: hidden;
+    position: relative;
+
+}
+
+.clients__desc {
+    z-index: 2;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+    position: absolute;
+    background-color: #e7e3d5d9;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color:#111110;
+    font-family: Rubik,sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    padding: 30px;
+    font-weight: 500;
+    line-height: 130%; /* 26px */
+}
+
+.clients__desc > {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.clients__desc-birthday {
+    color:#45453E;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    margin-bottom: 40px;
+}
+
+.clients__desc span {
+    color:#45453E;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+}
+.clients__desc span svg {
+    margin-left: 12px;
+}
+
+.clients__desc-name {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+.clients__item.show {
+    display: block;
+}
+
+.clients__item.hidden {
+    display: none;
+}
+
+.clients__image {
+    max-width: 314px;
+}
+
+.clients__image img {
+    width: 100%;
+}
+
+.clients__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 14px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.clients__inner-coaches {
+    display: none;
+}
+
+
+.clients__info {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    opacity: 1;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+    padding: 20px;
+    background-color: #E7E3D5;
+    font-family: Rubik, sans-serif;
+}
+
+.clients__info-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.clients__item:hover .clients__desc {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+}
+
+.clients__item:hover .clients__info {
+    opacity: 0;
+}
+
+
+.clients__name {
+    color:#111110;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 26px */
+    text-transform: uppercase;
+}
+
+.clients__age {
+    color:#45453E;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+.clients__country {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 8px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color:#45453E;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 18.2px */
+}
+
+@media (max-width: 1024px) {
+    .clients__hero {
+        background-image: url("../images/clients-mobile-bg.png");
+    }
+}
+
+@media (max-width: 768px) {
+    .clients__tabs {
+        font-size: 32px ;
+    }
+
+
+}
+
+@media (max-width: 626px) {
+
+    .clients {
+        padding: 80px 0;
+    }
+
+    .clients__actions {
+        overflow-y: hidden;
+        overflow-x: scroll;
+    }
+
+    .clients__tabs {
+        width: 600px;
+        gap: 0;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: start;
+    }
+    .clients__icon {
+        display: none;
+    }
+
+    .clients__filter {
+        width: 600px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .clients__players , .clients__coach {
+        max-width: 267px;
+    }
+}
+
+@media (max-width: 330px) {
+    .clients__info {
+        padding: 10px;
+    }
+}
